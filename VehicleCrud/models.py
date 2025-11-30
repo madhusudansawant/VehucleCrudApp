@@ -2,9 +2,9 @@ from django.db import models
 from django.core.validators import RegexValidator
 
 VEHICLE_TYPES = (
-    ("Two", "Two Wheelers"),
-    ("Three", "Three Wheelers"),
-    ("Four", "Four Wheelers"),
+    ("Two Wheeler", "Two Wheeler"),
+    ("Three Wheeler", "Three Wheeler"),
+    ("Four Wheeler", "Four Wheeler"),
 )
 
 class VehicleModel(models.Model):
@@ -18,7 +18,7 @@ class VehicleModel(models.Model):
             )
         ]
     )
-    vehicle_type = models.CharField(max_length=5, choices=VEHICLE_TYPES)
+    vehicle_type = models.CharField(max_length=25, choices=VEHICLE_TYPES)
     vehicle_model = models.CharField(max_length=50)
     vehicle_description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
