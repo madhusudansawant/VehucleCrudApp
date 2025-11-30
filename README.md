@@ -26,8 +26,5 @@ It provides user authentication, role-based permissions, and CRUD operations for
 
 ## Installation
 
-1. **Clone the repository**
+1. **Clone the repository (master branch)**
 
-```bash
-git clone <your-repo-url>
-cd <project-folder>
