@@ -20,7 +20,7 @@ It provides user authentication, role-based permissions, and CRUD operations for
 - Python 
 - Django 
 - Django REST Framework
-- SQLite (default, can be switched to PostgreSQL/MySQL)
+- SQLite3
 
 ---
 
